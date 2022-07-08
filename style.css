@@ -1,0 +1,96 @@
+* {
+    font-family: sans-serif;
+   background-color: black;
+   color: white;
+}
+
+h1 {
+    text-align: center;
+    color: crimson;
+}
+
+article {
+   display: flex;
+   flex-flow: column;
+   justify-items: center;
+   align-items: center;
+}
+
+#buttons {
+   margin-top: 20px;
+   width: fit-content;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+   margin: 1px;
+   width: 4em;
+   height: 4em;
+   background-color: #121212;
+   border-radius: 2em;
+}
+
+button:hover {
+   cursor: pointer;
+   background-color: crimson;
+}
+
+button:active {
+   /* pop out effect in css */
+    background-color: aqua;
+    animation: popup 0.5s;
+}
+
+@keyframes popup {
+  0%{
+    transform: scale(1);
+  }
+  30%{
+    transform: scale(1.2);
+  }
+  60%{
+    transform: scale(1.3);
+  }
+  70%{
+    transform: scale(1.2);
+  }
+  80%{
+    transform: scale(1);
+  }
+  90%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+
+}
+
+input {
+   background-color: aqua; 
+   color: #121212;
+   padding: 20px 30px;
+   text-align: right;
+   border: 1px solid aliceblue;
+   border-top: none;
+   border-bottom-left-radius: 50px;
+   border-bottom-right-radius: 50px;
+}
+.history{
+   height: 100px;
+   border: 1px solid aliceblue;
+   border-bottom: none;
+   border-top-left-radius: 50px;
+   border-top-right-radius: 50px;
+   margin-bottom: 10px;
+   padding: 20px 30px 0;
+}
+.history>*{
+   text-align: right;
+}
+#old{
+    height: 40%;
+    font-weight: 100;
+}
+
